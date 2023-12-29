@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  style="height:500px; width: 100%; object-fit: contain;" id="myimg"> 
+    <script>
+        var i=0
+        var image=[];
+        image[0]="img/1.webp";
+        image[1]="img/2.jpg";
+        image[2]="img/3.jpg";
+        image[3]="img/4.jpg";
+        image[4]="img/5.jpg";
+        
+
+        function changeImg(){
+            document.getElementById('myimg').src=image[i]
+            if (i < image.length -1){
+                (0<3)
+                i++
+            }
+            else{
+                i=0
+            }
+            setTimeout("changeImg()",100);
+        }
+
+         changeImg();
+    </script>
+</body>
+</html>
